@@ -1,0 +1,10 @@
+<md-content ng-controller="SplashCtrl as slash">
+  <!--<div class="col-xs-12" ng-if="progress !== 100">-->
+    <!--<progressbar class="progress-striped" value="progress">{{progress | number:0}}%</progressbar>-->
+  <!--</div>-->
+  <img bg-image class="fullBg" ng-repeat="slide in splash.slides"
+       ng-if="isCurrentSlideIndex($index)"
+       ng-src="{{slide.src}}">
+
+</md-content>
+

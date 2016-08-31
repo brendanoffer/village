@@ -1,6 +1,6 @@
 <md-content ng-controller="RaceResultsCtrl as raceResults" class="md-padding" layout-xs="column" layout="row">
-  <div flex layout="column" >
-    <md-card ng-repeat="race in raceResults.races">
+  <div layout-lt-md="column" layout-gt-sm="row" layout-wrap>
+    <md-card flex-lt-xl="100" flex-gt-lg="45" ng-repeat="race in raceResults.races">
       <img ng-src="{{race.imageUrl}}" class="md-card-image" alt="Washed Out">
       <md-card-title>
         <md-card-title-text>

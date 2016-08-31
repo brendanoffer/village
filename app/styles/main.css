@@ -7,6 +7,7 @@ a {
   overflow: hidden;
   max-width: 100%;
   max-height: 100%;
+  background-color: black;
 }
 
 .img-circle {
@@ -25,11 +26,21 @@ a {
   max-width: 100%;
   height:100%;
   overflow: hidden;
-  background-color: #00695C;
+  background-color: #070707;
+}
+
+.content-pane {
+  background-color: #070707;
+  background: linear-gradient(#0a140a, #070707 25%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0a140a), color-stop(1, #070707));
+  background: -webkit-linear-gradient(top, #0a140a 0%, #070707 100%);
+  background: -moz-linear-gradient(top, #0a140a 0%, #070707 100%);
+  background: linear-gradient(top, #0a140a 0%, #070707 100%);
+  border-bottom: 1px solid #0a140a;
 }
 
 .sidebar-menu > li {
-  border-bottom: 1px solid #00695C;
+  border-bottom: 1px solid #222e0e;
 }
 
 .sidebar-menu .md-button {
@@ -60,18 +71,18 @@ a {
 }
 
 .nav-header {
-  background-color: #00695C;
-  background: linear-gradient(#009688, #00695C);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #009688), color-stop(1, #00695C));
-  background: -webkit-linear-gradient(top, #009688 0%, #00695C 100%);
-  background: -moz-linear-gradient(top, #009688 0%, #00695C 100%);
-  background: linear-gradient(top, #009688 0%, #00695C 100%);
-  border-bottom: 1px solid #009688;
+  background-color: #070707;
+  background: linear-gradient(#0a140a, #070707);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0a140a), color-stop(1, #070707));
+  background: -webkit-linear-gradient(top, #0a140a 0%, #070707 100%);
+  background: -moz-linear-gradient(top, #0a140a 0%, #070707 100%);
+  background: linear-gradient(top, #0a140a 0%, #070707 100%);
+  border-bottom: 1px solid #0a140a;
   flex-shrink: 0;
   z-index: 2;
 }
 .page-content {
-  max-width:864px;
+  width:100%;
 }
 
 
@@ -85,7 +96,7 @@ a {
 }
 
 .profile-text {
-  color: white;
+  color: #94c743;
   text-align: center;
   font-weight: 400;
   font-size: 26px;

@@ -13,19 +13,19 @@ angular.module('brendanofferApp')
 
     vm.sections = [
       {
-        label: "Athletics",
+        label: "Team",
         subsections: [
           {
+            label: "Members",
+            url: '#/members'
+          },
+          {
             label: "Race Results",
-            url: '/results'
+            url: '#/results'
           },
           {
             label: "Photos",
-            url: '/photos'
-          },
-          {
-            label: "Visual Analytics",
-            url: '#/analytics'
+            url: '#/photos'
           }
         ]
       },
@@ -33,12 +33,12 @@ angular.module('brendanofferApp')
         label: "Info",
         subsections: [
           {
-            label: "About me",
-            url: '/about'
+            label: "About",
+            url: '#/about'
           },
           {
             label: "Contact",
-            url: '/contact'
+            url: '#/contact'
           }
         ]
       }

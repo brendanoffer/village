@@ -14,9 +14,20 @@ angular
     'ngMaterial',
     'ngRoute'
   ]).config(function ($routeProvider, $locationProvider, $mdThemingProvider) {
+  // $mdThemingProvider.theme('default')
+  //   .primaryPalette('light-green', {'default' : '#A200'})
+  //   .accentPalette('indigo');
+  //
+
+  var villageMap = $mdThemingProvider.extendPalette('light-green', {
+    '500': '#b8f558'
+  });
+  // Register the new color palette map with the name <code>neonRed</code>
+  $mdThemingProvider.definePalette('villageMap', villageMap);
+  // Use that theme for the primary intentions
   $mdThemingProvider.theme('default')
-    .primaryPalette('teal')
-    .accentPalette('indigo');
+    .primaryPalette('villageMap', {'default' : '500'});
+
 
   $routeProvider
     .when('/', {
@@ -27,8 +38,12 @@ angular
       templateUrl: 'views/about.html',
       controller: 'MainCtrl'
     })
+    .when('/splash', {
+      templateUrl: 'views/splash.html',
+      controller: 'SplashCtrl'
+    })
     .when('/results', {
-      templateUrl: 'views/results',
+      templateUrl: 'views/results.html',
       controller: 'MainCtrl'
     })
     .when('/analytics', {
