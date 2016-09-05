@@ -1,1 +1,8 @@
+<md-content ng-controller="MembersCtrl as membersCtrl" class="md-padding" layout-xs="column" layout="row">
+  <div layout-lt-md="column" layout-gt-sm="row" layout-wrap>
+    <md-card flex-lt-xl="100" flex-gt-lg="45" ng-repeat="member in membersCtrl.members">
+      <img ng-src="{{member.imageUrl}}" class="md-card-image" alt="{{member.name}}">
+    </md-card>
+  </div>
+</md-content>
 
