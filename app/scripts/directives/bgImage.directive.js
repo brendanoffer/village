@@ -1,4 +1,4 @@
-angular.module('brendanofferApp').directive('bgImage', function ($window, $timeout) {
+angular.module('maglia').directive('bgImage', function ($window, $timeout) {
   return function (scope, element, attrs) {
     var resizeBG = function () {
       var bgwidth = element.width();

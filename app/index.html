@@ -2,6 +2,8 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
+  <base href="/">
+
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
@@ -10,50 +12,69 @@
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="bower_components/angular-material/angular-material.css" />
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 </head>
-<body class="app-body" layout="row" ng-app="brendanofferApp">
+<body class="app-body" layout="row" ng-app="maglia">
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<md-sidenav
-  class="md-sidenav-left site-sidenav"
-  md-component-id="left"
-  md-is-locked-open="$mdMedia('gt-sm')"
-  md-disable-backgrop
-  md-whiteframe="4"
->
-  <header class="nav-header md-primary">
-    <a ng-href="/" class="profile-photo" href="/">
-      <img class="" src="images/logo/logo-transparent.png" width="150" alt="">
-      <h1 class="profile-text md-heading">Team Village</h1>
-    </a>
-  </header>
-  <md-content ng-controller="SideBarCtrl as sidebar" class="sidebar-menu md-primary" flex role="navigation">
-    <ul class="sidebar-menu">
-      <li ng-repeat="section in sidebar.sections">
-        <h2 class="menu-heading md-subhead">{{section.label}}</h2>
-        <ul>
-          <li ng-repeat="subsection in section.subsections">
-            <md-button href="{{subsection.url}}">{{subsection.label}}</md-button>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </md-content>
-</md-sidenav>
+<!--<md-sidenav-->
+  <!--class="md-sidenav-left site-sidenav"-->
+  <!--md-component-id="left"-->
+  <!--md-is-locked-open="$mdMedia('gt-sm')"-->
+  <!--md-disable-backgrop-->
+  <!--md-whiteframe="4"-->
+<!--&gt;-->
+  <!--<header class="nav-header md-primary">-->
+    <!--<a ng-href="/" class="profile-photo" href="/">-->
+      <!--<img class="" src="images/logo/logo-transparent.png" width="150" alt="">-->
+      <!--<h1 class="profile-text md-heading">Team Village</h1>-->
+    <!--</a>-->
+  <!--</header>-->
+  <!--<md-content ng-controller="SideBarCtrl as sidebar" class="sidebar-menu md-primary" flex role="navigation">-->
+    <!--<ul class="sidebar-menu">-->
+      <!--<li ng-repeat="section in sidebar.sections">-->
+        <!--<h2 class="menu-heading md-subhead">{{section.label}}</h2>-->
+        <!--<ul>-->
+          <!--<li ng-repeat="subsection in section.subsections">-->
+            <!--<md-button href="{{subsection.url}}">{{subsection.label}}</md-button>-->
+          <!--</li>-->
+        <!--</ul>-->
+      <!--</li>-->
+    <!--</ul>-->
+  <!--</md-content>-->
+<!--</md-sidenav>-->
 
 <div layout="column" role="main" flex>
-  <!--<md-toolbar class="top-nav md-whiteframe-1dp">-->
-    <!--Top Toolbar-->
-  <!--</md-toolbar>-->
-  <md-content>
+  <md-toolbar style="height: 50px" class="top-nav md-tall md-whiteframe-1dp">
+    <div layout="row" style="max-height:250px; height: 100%" layout-align="center center" class="md-toolbar-tools">
+      <div flex layout="row" layout-align="end center">
+        <h1 class="navbar-text"><a href="/">Home</a></h1>
+        <h1 class="navbar-text"><a href="/#/team">Team</a></h1>
+      </div>
+
+      <img class="navbar-img" src="images/MAGLIA.png" width="300" >
+      <div flex layout="row" layout-align="start center">
+        <h1 class="navbar-text"><a href="https://www.road-results.com/team/39297">Results</a></h1>
+        <h1 class="navbar-text">About</h1>
+        <span flex></span>
+        <a href="https://www.instagram.com/magliarosanycracing/"><i class="fa fa-instagram fa-lg navbar-social-media" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com/TeamVillageRacing"><i class="fa fa-facebook fa-lg navbar-social-media" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/team_village"><i class="fa fa-twitter fa-lg navbar-social-media" aria-hidden="true"></i></a>
+
+
+      </div>
+
+    </div>
+  </md-toolbar>
+  <md-content flex>
     <!--Page content-->
     <div class="page-content content-pane" ng-view></div>
   <!--<div class="page-content" ng-include="'views/results.html'" ng-controller="MainCtrl"></div>-->
@@ -92,10 +113,10 @@
 
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/sidebar.controller.js"></script>
-<script src="scripts/controllers/splash.controller.js"></script>
 <script src="scripts/directives/bgImage.directive.js"></script>
 <script src="scripts/controllers/raceresults.controller.js"></script>
 <script src="scripts/controllers/about.controller.js"></script>
+<script src="scripts/controllers/members.controller.js"></script>
 <!-- endbuild -->
 </body>
 </html>

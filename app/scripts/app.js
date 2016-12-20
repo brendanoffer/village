@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name brendanofferApp
+ * @name maglia
  * @description
- * # brendanofferApp
+ * # magia
  *
  * Main module of the application.
  */
 angular
-  .module('brendanofferApp', [
+  .module('maglia', [
     'ngAnimate',
     'ngMaterial',
     'ngRoute'
@@ -31,12 +31,12 @@ angular
 
   $routeProvider
     .when('/', {
-      templateUrl: 'views/results.html',
-      controller: 'MainCtrl'
+      templateUrl: 'views/members.html',
+      controller: 'MembersCtrl as membersCtrl'
     })
-    .when('/about', {
-      templateUrl: 'views/about.html',
-      controller: 'MainCtrl'
+    .when('/team', {
+      templateUrl: 'views/members.html',
+      controller: 'MembersCtrl as membersCtrl'
     })
     .when('/splash', {
       templateUrl: 'views/splash.html',
@@ -55,4 +55,4 @@ angular
     });
 
 });
-;
+

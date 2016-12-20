@@ -1,8 +1,14 @@
-<md-content ng-controller="MembersCtrl as membersCtrl" class="md-padding" layout-xs="column" layout="row">
-  <div layout-lt-md="column" layout-gt-sm="row" layout-wrap>
-    <md-card flex-lt-xl="100" flex-gt-lg="45" ng-repeat="member in membersCtrl.members">
-      <img ng-src="{{member.imageUrl}}" class="md-card-image" alt="{{member.name}}">
+<md-content class="md-padding" layout-xs="column" layout="row">
+  <div layout-xs="column" layout="row" layout-wrap>
+    <md-card class="member-card" style="" flex="33" flex-xs="100" ng-repeat="member in membersCtrl.members">
+      <img ng-src="{{member.imageUrl}}" class="md-card-image member-img" alt="{{member.name}}">
+
+
+        <h2 class="member-text">{{member.name}}</h2>
+        <!--<div class="hidden-member-text">-->
+        <!--<i class="fa fa-instagram fa-lg" aria-hidden="true"></i>-->
+        <!--</div>-->
+
     </md-card>
   </div>
 </md-content>
-

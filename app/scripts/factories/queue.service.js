@@ -1,4 +1,4 @@
-angular.module('brendanofferApp').factory('QueueService', function ($rootScope) {
+angular.module('maglia').factory('QueueService', function ($rootScope) {
   var queue = new createjs.LoadQueue(true);
 
   function loadManifest(manifest) {
