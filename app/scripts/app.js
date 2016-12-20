@@ -31,8 +31,7 @@ angular
 
   $routeProvider
     .when('/', {
-      templateUrl: 'views/members.html',
-      controller: 'MembersCtrl as membersCtrl'
+      redirectTo: '/team'
     })
     .when('/team', {
       templateUrl: 'views/members.html',
@@ -46,12 +45,8 @@ angular
       templateUrl: 'views/results.html',
       controller: 'MainCtrl'
     })
-    .when('/analytics', {
-      templateUrl: 'views/visualizations.html',
-      controller: 'MainCtrl'
-    })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/team'
     });
 
 });
