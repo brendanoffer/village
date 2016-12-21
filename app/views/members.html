@@ -1,12 +1,12 @@
 <md-content class="md-padding" layout-xs="column" layout="row">
   <div layout-xs="column" layout="row" layout-wrap>
     <md-card class="member-card" style="" flex="33" flex-md="50" flex-sm="50" flex-xs="100" ng-repeat="member in membersCtrl.members">
-      <img ng-src="{{member.imageUrl}}" class="md-card-image member-img" alt="{{member.name}}">
+      <a href="{{member.instagram}}"><img ng-src="{{member.imageUrl}}" class="md-card-image member-img" alt="{{member.name}}">
         <h2 class="member-text">{{member.name}}</h2>
         <!--<div class="hidden-member-text">-->
         <!--<i class="fa fa-instagram fa-lg" aria-hidden="true"></i>-->
         <!--</div>-->
-
+      </a>
     </md-card>
   </div>
 </md-content>
