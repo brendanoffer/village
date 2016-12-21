@@ -20,7 +20,7 @@ angular
   //
 
   var villageMap = $mdThemingProvider.extendPalette('light-green', {
-    '500': '#b8f558'
+    '500': '#ECACB4'
   });
   // Register the new color palette map with the name <code>neonRed</code>
   $mdThemingProvider.definePalette('villageMap', villageMap);

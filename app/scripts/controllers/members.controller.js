@@ -11,19 +11,22 @@ angular.module('maglia')
   .controller('MembersCtrl', function () {
     var vm = this;
 
-    vm.members = [{
-      id: "1",
-      name: "Rory O'neill",
-      motto: "",
-      imageUrl: "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/12930768_704805212992642_875457573_n.jpg?ig_cache_key=MTIzMzY1MDI2NzI3NTYwMjYxMA%3D%3D.2",
-      instagram: 'https://www.instagram.com/1roryoneill/'
-    }, {
-      id: "2",
-      name: "Nick Baker",
-      motto: "",
-      imageUrl: "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/13827458_854556464680957_1523103945_n.jpg?ig_cache_key=MTMxNjk5MDc4OTk1OTYzODExNQ%3D%3D.2",
-      instagram: "https://www.instagram.com/nicholaspbaker/"
-    },
+
+    vm.members = [
+      {
+        id: "1",
+        name: "Rory O'neill",
+        motto: "",
+        imageUrl: "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/s750x750/sh0.08/e35/12930768_704805212992642_875457573_n.jpg?ig_cache_key=MTIzMzY1MDI2NzI3NTYwMjYxMA%3D%3D.2",
+        instagram: 'https://www.instagram.com/1roryoneill/'
+      },
+      {
+        id: "2",
+        name: "Nick Baker",
+        motto: "",
+        imageUrl: "https://scontent-lga3-1.cdninstagram.com/t51.2885-15/e35/13827458_854556464680957_1523103945_n.jpg?ig_cache_key=MTMxNjk5MDc4OTk1OTYzODExNQ%3D%3D.2",
+        instagram: "https://www.instagram.com/nicholaspbaker/"
+      },
       {
         id: "3",
         name: "Patrick Wilson",
@@ -80,5 +83,6 @@ angular.module('maglia')
         instragram: "https://www.instagram.com/jt85_/",
       }
     ];
+
 
   });
