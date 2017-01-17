@@ -1,3 +1,10 @@
 .mobile-menu {
   margin-right:10px;
 }
+
+
+.site-sidenav, .site-sidenav.md-locked-open-add-active, .site-sidenav.md-locked-open {
+  width: 272px;
+  min-width: 272px;
+  max-width: 272px;
+}

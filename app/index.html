@@ -31,7 +31,7 @@
 
   <!--Top Nav Bar for desktops -->
     <md-sidenav
-      class="md-sidenav-left"
+      class="site-sidenav md-sidenav-left"
       md-component-id="left"
       md-whiteframe="3">
       <div ng-controller="SidenavCtrl as sidenav">
@@ -55,27 +55,30 @@
 
   <section layout="row">
 
-    <md-toolbar class="top-nav md-whiteframe-1dp">
-      <div show-xs hide layout="row" layout-align="start center" class="md-toolbar-tools">
+    <md-toolbar show-xs show-sm hide class="mobile-nav md-whiteframe-1dp">
+      <div layout="row" layout-align="start center" class="md-toolbar-tools">
         <md-button ng-click="toggleLeft()"
                    class="md-icon-button" hide-gt-md><i class="fa fa-bars fa-lg" aria-hidden="true"></i>
         </md-button>
         <h1>Team</h1>
       </div>
+      </md-toolbar>
+      <md-toolbar show-gt-sm hide class="top-nav md-whiteframe-1dp">
+
       <div show-gt-xs hide layout="row" style="max-height:250px; height: 100%" layout-align="center center"
            class="md-toolbar-tools">
         <div flex layout="row" layout-align="end center">
-          <h1 class="navbar-text"><a href="#!/team">Home</a></h1>
-
           <h1 class="navbar-text"><a href="#!/team">Team</a></h1>
+
+          <h1 class="navbar-text"><a href="https://www.road-results.com/team/39297">Results</a></h1>
         </div>
 
         <img class="navbar-img" src="images/MAGLIA.png" width="300">
 
         <div flex layout="row" layout-align="start center">
-          <h1 class="navbar-text"><a href="https://www.road-results.com/team/39297">Results</a></h1>
-
           <h1 class="navbar-text">About</h1>
+
+          <a href="http://www.magliarosanyc.com"><h1 class="navbar-text">Shop</h1></a>
           <span flex></span>
           <a href="https://www.instagram.com/magliarosanycracing/"><i class="fa fa-instagram fa-lg navbar-social-media"
                                                                       aria-hidden="true"></i></a>

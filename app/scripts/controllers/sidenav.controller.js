@@ -23,10 +23,6 @@ angular.module('maglia')
 
     vm.menuOptions = [
       {
-        label: "Home",
-        uri: "#!/team"
-      },
-      {
         label: "Team",
         uri: "#!/team"
       },
@@ -37,6 +33,10 @@ angular.module('maglia')
       {
         label: "About",
         uri: "#!/about"
+      },
+      {
+        label: "Shop",
+        uri: "http://www.magliarosanyc.com"
       },
       {
         label: "Instagram",
